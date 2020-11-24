@@ -76,4 +76,22 @@ iframe {
     height: 700px;
     object-fit: contain;
   }
+
+  .projectPage-description {
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight: 100;
+  }
+
+  .projectPage-description-container > h3 {
+    font-size: 2.5vw;
+  }
+
+  .projectPage-span {
+    font-size: 3vw;
+  }
+
+  .projectPage-p {
+    font-size: 3vw;
+  }
 }
