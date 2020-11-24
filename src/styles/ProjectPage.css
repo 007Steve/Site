@@ -21,6 +21,7 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.397);
   font-weight: 300;
+  margin: 1rem;
 }
 .projectPage-span {
   text-transform: uppercase;
@@ -30,15 +31,16 @@
   font-size: 2vw;
 }
 .projectPage-info {
-  text-align: left;
+  text-align: center;
   margin-left: 2rem;
+  display: flex;
 }
 
 a {
   text-decoration: none;
 }
 .projectPage-description-container {
-  width: 50%;
+  width: 100%;
   text-align: left;
   margin-left: 2rem;
 }
@@ -65,8 +67,9 @@ iframe {
 
 .projectPage-info-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  justify-content: left;
   width: 90%;
   margin: 0 auto;
 }
@@ -86,12 +89,21 @@ iframe {
   .projectPage-description-container > h3 {
     font-size: 2.5vw;
   }
-
+  .projectPage-description-container {
+    width: 90%;
+  }
   .projectPage-span {
     font-size: 3vw;
   }
 
   .projectPage-p {
     font-size: 3vw;
+  }
+  .projectPage-info-container {
+    flex-direction: column-reverse;
+    justify-content: left;
+  }
+  .projectPage-info {
+    text-align: center;
   }
 }
