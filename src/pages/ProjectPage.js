@@ -55,7 +55,6 @@ function ProjectPage() {
             <p className="projectPage-description">{projectInfo.description}</p>
           </div>
         </div>
-
         <img src={projectInfo.backgroundPic} alt="" />
       </motion.div>
     </div>
