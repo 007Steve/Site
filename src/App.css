@@ -1,0 +1,15 @@
+.App {
+  background-color: #272d2d;
+  background-image: linear-gradient(
+    150deg,
+    #272d2d 0%,
+    #161a1a 50%,
+    #000000 100%
+  );
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

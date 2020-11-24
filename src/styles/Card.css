@@ -1,0 +1,13 @@
+.card {
+  width: 50%;
+}
+
+#card-image {
+  width: 400px;
+}
+
+@media only screen and (max-width: 812px) {
+  #card-image {
+    width: 200px;
+  }
+}

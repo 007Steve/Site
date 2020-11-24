@@ -1,0 +1,28 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.portfolio > h2 {
+  text-align: center;
+  font-size: 8vw;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.397);
+  font-weight: 100;
+}
+
+.portfolio-projects {
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 1rem;
+  grid-template-columns: 500px 500px;
+  height: 100%;
+}
+@media only screen and (max-width: 820px) {
+  .portfolio-projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
