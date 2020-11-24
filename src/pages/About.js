@@ -54,6 +54,7 @@ function About() {
             </div>
           </div> */}
         </div>
+        
       </motion.div>
     </div>
   );
