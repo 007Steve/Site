@@ -2,61 +2,54 @@ import React from "react";
 import "../styles/ProjectPage.css";
 import { useParams } from "react-router-dom";
 import projectData from "../projectData";
+import projectDataAR from "../projectDataAR";
+import ReactPlayer from "react-player";
 import { motion } from "framer-motion";
 function ProjectPage() {
   const { id } = useParams();
+
   const projectInfo = projectData.find((data) => data.id === id);
+
   return (
     <div className="projectPage">
-      <div className="projectPage-title-container">
-        <motion.h2
-          initial={{ y: 10, opacity: 0 }}
-          animate={{ y: -5, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 3 }}
-          className="projectPage-title"
-        >
-          {projectInfo.name}
-        </motion.h2>
-      </div>
-      <motion.div
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: -5, opacity: 1 }}
-        transition={{ ease: "easeIn", duration: 6 }}
-      >
-        <iframe
-          width="787"
-          height="1780"
-          src={`https://www.youtube.com/embed/${projectInfo.video}`}
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <div className="projectPage-info-container">
-          <div className="projectPage-info">
-            <p className="projectPage-p">
-              Frameworks:{" "}
-              <span className="projectPage-span">{projectInfo.tools}</span>
+      <iframe
+        src={`https://www.youtube.com/embed/${projectInfo.video}?autoplay=1&mute=1`}
+        frameborder="0"
+        allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div className="projectPage-project-container">
+        <div className="projectPage-project-info-container">
+          <h2 className="projectPage-project-title">{projectInfo.name}</h2>
+          <p className="projectPage-project-p">
+            Stack:
+            <span className="projectPage-project-span">
+              {" "}
+              {projectInfo.tools}
+            </span>
+          </p>
+          <a href={projectInfo.website}>
+            <p className="projectPage-project-p">
+              Website:<span className="projectPage-project-span"> Link</span>
             </p>
-            <p className="projectPage-p">
-              Live:{" "}
-              <a href={projectInfo.website}>
-                <span className="projectPage-span">Website</span>
-              </a>
+          </a>
+          <a href={projectInfo.github}>
+            <p className="projectPage-project-p">
+              Github:<span className="projectPage-project-span"> Code</span>
             </p>
-            <p className="projectPage-p">
-              Code:{" "}
-              <a href={projectInfo.github}>
-                <span className="projectPage-span">Github</span>
-              </a>
-            </p>
-          </div>
-          <div className="projectPage-description-container">
-            <h3>Overview</h3>
-            <p className="projectPage-description">{projectInfo.description}</p>
-          </div>
+          </a>
         </div>
-        <img src={projectInfo.backgroundPic} alt="" />
-      </motion.div>
+
+        <div className="projectPage-project-info-container">
+          <h2 className="projectPage-project-title">Overview</h2>
+          <p className="projectPage-project-description">
+            {projectInfo.description}
+          </p>
+        </div>
+      </div>
+      {/* <img className="projectPage-images" src={projectInfo.imageOne} alt="" />
+      <img className="projectPage-images" src={projectInfo.imageTwo} alt="" />
+      <img className="projectPage-images" src={projectInfo.imageThree} alt="" /> */}
     </div>
   );
 }

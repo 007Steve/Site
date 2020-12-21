@@ -2,7 +2,7 @@ import React from "react";
 import Tilt from "react-tilt";
 import "../styles/Card.css";
 import { Link } from "react-router-dom";
-function Card({ image, id }) {
+function Card({ image, id, name }) {
   // const transition = {
   //       yoyo: Infinity,
   //        duration: 3,
@@ -11,7 +11,7 @@ function Card({ image, id }) {
   //        transition={transition}
   return (
     <Tilt>
-      <Link to={`/project/${id}`}>
+      <Link to={`/${name}/${id}`}>
         <div className="card">
           <img id="card-image" src={image} alt="" />
         </div>

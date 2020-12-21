@@ -3,6 +3,7 @@ import "../styles/Portfolio.css";
 import projectData from "../projectData";
 import Card from "../components/Card";
 import { motion } from "framer-motion";
+
 function Portfolio() {
   return (
     <div className="portfolio">
@@ -20,7 +21,12 @@ function Portfolio() {
         className="portfolio-projects"
       >
         {projectData.map((data) => (
-          <Card key={data.id} image={data.thumbnail} id={data.id} />
+          <Card
+            key={data.id}
+            image={data.thumbnail}
+            id={data.id}
+            name="project"
+          />
         ))}
       </motion.div>
     </div>

@@ -66,8 +66,35 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-<div className="projects">
+<!-- <div className="projects">
       {/* {projectData.map((data) => (
    
           <Card key={data.id} image={data.thumbnail} />
-        ))} */}
+        ))} */} -->
+
+
+         <!-- <div className="projectPage-info-container">
+          <div className="projectPage-info">
+            <p className="projectPage-p">
+              Frameworks:{" "}
+              <span className="projectPage-span">{projectInfo.tools}</span>
+            </p>
+            <p className="projectPage-p">
+              Live:{" "}
+              <a href={projectInfo.website}>
+                <span className="projectPage-span">Website</span>
+              </a>
+            </p>
+            <p className="projectPage-p">
+              Code:{" "}
+              <a href={projectInfo.github}>
+                <span className="projectPage-span">Github</span>
+              </a>
+            </p>
+          </div>
+          <div className="projectPage-description-container">
+            <h3>Overview</h3>
+            <p className="projectPage-description">{projectInfo.description}</p>
+          </div>
+        </div>
+        <img src={projectInfo.backgroundPic} alt="" /> -->

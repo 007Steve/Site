@@ -24,37 +24,18 @@ function About() {
         <img className="about-image" img src="/DSC_1020.jpeg" alt="" />
 
         <div className="about-info-container">
-          <h3 className="about-info-container-name"> Stephen Plummer</h3>
+          <div className="">
+            <p id="hi">HELLO, I'M</p>
+            <p className="about-info-container-name"> Stephen Plummer</p>
+          </div>
+
           <p className="about-info-container-p">
-            My interests for web development started in 2016 when I discovered a
-            company called Magic Leap which focuses on developing augmented
-            reality experiences through AR glasses. The level of creativity and
-            interactiveness that the website had sparked my passion for
-            developing the spatial web even further. It was then I knew that
-            this is where I wanted my life work to be. After years of sitting on
-            the sidelines learning about the spatial web of augmented and
-            virtual reality I decided to take the leap and enroll in Flatiron
-            Coding Bootcamp to gain the necessary knowledge and skills needed to
-            develop applications for the spatial web. This has lead me to this
-            point of my journey as a Front-End developer with a passion for
-            creating websites and AR/VR experiences.
+            I am an Front-End Developer based out of Stratford Connecticut. I
+            love pushing the limits of technology such as AR/VR by creating
+            engaging experiences. Some of my favorite things include coding,
+            photography, and fishing.
           </p>
-          {/* <div className="about-links-container">
-            <div className="about-links">
-              <LinkedInIcon />
-              <p> Stephen Plummer</p>
-            </div>
-            <div className="about-links">
-              <EmailIcon />
-              <p>stephen.plummer1.sp@gmail.com</p>
-            </div>
-            <div className="about-links">
-              <PhoneAndroidIcon />
-              <p>(203) - 360 - 6814</p>
-            </div>
-          </div> */}
         </div>
-        
       </motion.div>
     </div>
   );

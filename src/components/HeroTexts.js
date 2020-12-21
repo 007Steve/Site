@@ -12,7 +12,7 @@ function HeroTexts() {
       <h1 className="heroTexts-title">Stephen Plummer</h1>
       <div className="heroTexts-info">
         <h3> Web Developer</h3>
-        <span>|</span>
+        <span className="heroTexts-info-span">|</span>
         <h3> AR/VR Developer</h3>
       </div>
     </motion.div>

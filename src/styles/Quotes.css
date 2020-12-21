@@ -4,7 +4,19 @@
   place-items: center;
   padding: 1rem;
   height: 90vh;
+  font-weight: 600;
+  color: aliceblue;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 .quotes-info {
   text-align: center;
+}
+.quotes-h4 {
+  font-weight: 300;
+  color: aliceblue;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }

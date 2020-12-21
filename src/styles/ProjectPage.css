@@ -10,7 +10,7 @@
 }
 
 .projectPage-title {
-  font-size: 8vw;
+  font-size: 5rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.397);
   font-weight: 100;
@@ -27,22 +27,82 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.397);
   font-weight: 100;
-  letter-spacing: 0;
+  letter-spacing: 80;
   font-size: 2vw;
 }
 .projectPage-info {
-  text-align: center;
+  text-align: left;
   margin-left: 2rem;
   display: flex;
+  flex-direction: column;
+  width: 50%;
 }
+
+
+
+/* new */
+.projectPage-project-info-container{
+  width: 50%;
+  height: 50%;
+  text-align: left;
+}
+.projectPage-project-p{
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.397);
+  text-align: left;
+}
+
+
+.projectPage-project-span{
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.842);
+}
+
+.projectPage-project-container{
+  display: flex;
+  justify-content: center;
+ 
+  align-items: flex-start;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.projectPage-project-title{
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.397);
+  font-weight: 100;
+}
+
+.projectPage-project-description{
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.842);
+}
+
+
+
+
+
+
+
+
+
 
 a {
   text-decoration: none;
 }
 .projectPage-description-container {
-  width: 100%;
+  width: 50%;
   text-align: left;
   margin-left: 2rem;
+
 }
 
 .projectPage-description-container > h3 {
@@ -60,24 +120,21 @@ a {
 }
 
 iframe {
-  width: 90%;
+  width:100vw;
   height: 700px;
-  object-fit: contain;
 }
 
 .projectPage-info-container {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: left;
+
   width: 90%;
   margin: 0 auto;
+
 }
 @media only screen and (max-width: 812px) {
   iframe {
-    width: 80%;
-    height: 700px;
-    object-fit: contain;
+   
   }
 
   .projectPage-description {
@@ -105,5 +162,18 @@ iframe {
   }
   .projectPage-info {
     text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 954px) {
+  .projectPage-project-container{
+flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .projectPage-project-container{
+max-width: 50%;
   }
 }
