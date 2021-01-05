@@ -7,7 +7,7 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setShow(false);
-    }, 8000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
   const [show, setShow] = useState(true);
@@ -15,7 +15,7 @@ function Home() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: "easeIn", duration: 4 }}
+      transition={{ ease: "easeIn",  }}
       className="home"
     >
       {show ? <Quotes /> : <HeroTexts />}

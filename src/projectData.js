@@ -1,11 +1,10 @@
 export default [
   {
     name: "Music App",
-    tools: "React | Redux ",
+    tools: "React | Redux | Rails API",
     color: "#fcba03",
     id: "1",
-    description:
-      "This application is a Cinema App the lets the user explore the site and discover movies. For this project I used the movie database API to get all the movies' data. The insipration for this site is a combination of Netflix and HBO themes. Overall this was a fun project to build. The upcoming features are to add video trailers and authentication functionality",
+    description: "This Music App is a web music player where I used Rails API to pull songs. This App allows users to browse through playlists and listen to a variety of songs from ChillHop",
     video: "1ZdMmkU1Or0",
     backgroundPic: `/Screen Shot 2020-12-30 at 1.15.47 PM.png`,
     thumbnail: `/music App.png`,
@@ -20,8 +19,8 @@ export default [
     tools: "React | Redux | Covid-19 API ",
     color: "#fcba03",
     id: "2",
-    description:
-      "This application is a Covid App ",
+    description: 
+      "This application is a Covid App that provides information about each country's COVID cases. This App utilized the Coronavirus API in order to pull specific information for each country.",
     video: "FW9naVDshF4",
     backgroundPic: `/CinemaBackground.png`,
     thumbnail: `/COVID-19 App.png`,

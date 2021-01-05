@@ -16,7 +16,7 @@ function Quotes() {
         <motion.h4
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: -5, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 1.5 }}
+           transition={{ ease: "easeOut", duration: 1.5 }}
           className="quotes-h4"
         >
           {quotesData[num].text}
@@ -24,7 +24,7 @@ function Quotes() {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ ease: "easeIn", duration: 6 }}
+           transition={{ ease: "easeIn", duration: 1 }}
         >
          -{quotesData[num].author} 
         </motion.p>

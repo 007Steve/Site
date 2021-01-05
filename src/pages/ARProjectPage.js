@@ -10,6 +10,7 @@ function ARProjectPage() {
   return (
     <div className="projectPage">
       <iframe
+      title="youtube"
         src={`https://www.youtube.com/embed/${projectInfo.video}?autoplay=1&mute=1`}
         frameborder="0"
         allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -1,8 +1,5 @@
 import React from "react";
 import "../styles/About.css";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import EmailIcon from "@material-ui/icons/Email";
-import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import { motion } from "framer-motion";
 function About() {
   return (
@@ -35,6 +32,8 @@ function About() {
             engaging experiences. Some of my favorite things include coding,
             photography, and fishing.
           </p>
+          <a href = "mailto: stephen.plummer1.sp@gmail.com"> <p className="about-info-container-contact">Contact Me</p></a>
+         
         </div>
       </motion.div>
     </div>

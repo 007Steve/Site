@@ -2,9 +2,7 @@ import React from "react";
 import "../styles/ProjectPage.css";
 import { useParams } from "react-router-dom";
 import projectData from "../projectData";
-import projectDataAR from "../projectDataAR";
-import ReactPlayer from "react-player";
-import { motion } from "framer-motion";
+
 function ProjectPage() {
   const { id } = useParams();
 
@@ -13,6 +11,7 @@ function ProjectPage() {
   return (
     <div className="projectPage">
       <iframe
+        title="youtube"
         src={`https://www.youtube.com/embed/${projectInfo.video}?autoplay=1&mute=1`}
         frameborder="0"
         allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -28,16 +27,20 @@ function ProjectPage() {
               {projectInfo.tools}
             </span>
           </p>
-          <a href={projectInfo.website}>
-            <p className="projectPage-project-p">
-              Website:<span className="projectPage-project-span"> Link</span>
-            </p>
-          </a>
-          <a href={projectInfo.github}>
-            <p className="projectPage-project-p">
-              Github:<span className="projectPage-project-span"> Code</span>
-            </p>
-          </a>
+
+          <p className="projectPage-project-p">
+            Website:
+            <a href={projectInfo.website}>
+              <span className="projectPage-project-span hover"> Link</span>
+            </a>
+          </p>
+
+          <p className="projectPage-project-p">
+            Github:{" "}
+            <a href={projectInfo.github}>
+              <span className="projectPage-project-span hover"> Code</span>{" "}
+            </a>
+          </p>
         </div>
 
         <div className="projectPage-project-info-container">
