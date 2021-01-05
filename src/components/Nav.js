@@ -22,9 +22,9 @@ function Nav() {
         <h4 className="nav-link">About</h4>
       </Link>
 
-      <Link to="/arvr" style={{ textDecoration: "none" }}>
+      {/* <Link to="/arvr" style={{ textDecoration: "none" }}>
         <h4 className="nav-link">AR/VR</h4>
-      </Link>
+      </Link> */}
     </motion.div>
   );
 }
