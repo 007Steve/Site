@@ -7,7 +7,7 @@ function Nav() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: "easeIn", duration: 7 }}
+      transition={{ ease: "easeIn", duration: 2 }}
       className="nav"
     >
       <Link to="/" style={{ textDecoration: "none" }}>

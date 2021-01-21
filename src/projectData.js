@@ -37,7 +37,7 @@ export default [
     id: "3",
     description:
       "This application is a Cinema App the lets the user explore the site and discover movies. For this project I used the movie database API to get all the movies' data. The insipration for this site is a combination of Netflix and HBO themes. Overall this was a fun project to build. The upcoming features are to add video trailers and authentication functionality",
-    video: "9HkUCRxMGiA",
+    video: "lXq0yB54xro",
     backgroundPic: `/CinemaBackground.png`,
     thumbnail: `/cinema.png`,
     website: "https://cinema-app-eight.vercel.app/",
